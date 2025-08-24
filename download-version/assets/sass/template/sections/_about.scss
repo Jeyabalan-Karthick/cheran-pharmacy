@@ -176,7 +176,7 @@
 /* Feature 1 ---------------------------------- */
 .feature-area-1 {
     padding: 63px 0;
-    border-bottom: 1px solid #D0DBE9;
+    border-bottom: 1px solid #0F2239;
     @include ml {
         padding: 50px 0;
     }
@@ -190,7 +190,7 @@
         width: 55px;
         line-height: 46px;
         background: $theme-color;
-        border: 3px solid #D0DBE9;
+        border: 3px solid #0F2239;
         text-align: center;
         border-radius: 50%;
     }
@@ -469,7 +469,7 @@
     background: $white-color;
     gap: 15px;
     border-radius: 10px;
-    border: 1px solid #D0DBE9;
+    border: 1px solid #0F2239;
     align-items: center;
     padding: 20px;
     .about-grid_title {
@@ -873,7 +873,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba($color: #0D5EF4, $alpha: 0.07);
+            background-color: rgba($color: #124980, $alpha: 0.07);
             z-index: -1;
             border-radius: 999px;
         }
