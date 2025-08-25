@@ -24009,8 +24009,8 @@ span.select2-selection.select2-selection--single:focus {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: -webkit-linear-gradient(left, #0d5ef4, rgba(13, 94, 244, 0));
-  background: linear-gradient(to right, #0d5ef4, rgba(13, 94, 244, 0));
+  background: -webkit-linear-gradient(left, #124980, rgba(13, 94, 244, 0));
+  background: linear-gradient(to right, #124980, rgba(13, 94, 244, 0));
   width: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
