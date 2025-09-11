@@ -1771,7 +1771,7 @@ textarea.is-invalid {
   padding-top: 40px;
   display: block;
   text-align: center;
-  background-color: ;
+  /* background-color: ; */
 }
 
 .th-menu-wrapper .mobile-logo svg {
@@ -8235,7 +8235,7 @@ ol.wp-block-rss {
 .header-layout12 .sticky-wrapper:after {
   content: "";
   height: 100%;
-  width: 50%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -8246,6 +8246,7 @@ ol.wp-block-rss {
 .header-layout12 .sticky-wrapper.sticky .menu-area {
   padding-left: 0;
 }
+
 
 /* Large devices */
 @media (max-width: 1199px) {
@@ -8262,6 +8263,8 @@ ol.wp-block-rss {
     display: none;
   }
 }
+
+
 
 /* Header 13 ---------------------------------- */
 .header-layout13 .header-button {
@@ -9647,7 +9650,7 @@ ol.wp-block-rss {
 
 .breadcumb-wrapper {
   background-color: var(--title-color);
-  padding: 155px 0;
+  padding: 250px 0;
   text-align: center;
   overflow: hidden;
 }
@@ -19177,7 +19180,7 @@ span.select2-selection.select2-selection--single:focus {
 /*------------------- 4.00. Testimonial  -------------------*/
 /* Testimonial 1 ---------------------------------- */
 .testi-area-1 {
-  padding-top: 243px;
+  padding-top: 100px;
   /* Medium devices */
 }
 
@@ -22451,8 +22454,8 @@ span.select2-selection.select2-selection--single:focus {
   height: 80px;
   border-radius: 10px 0 0 0;
   background: transparent;
-  border-left: solid 40px #FCBA11;
-  border-top: solid 40px #FCBA11;
+  border-left: solid 40px #0c4b80;
+  border-top: solid 40px #0c4b80;
   border-bottom: solid 40px transparent;
   border-right: solid 40px transparent;
   z-index: -1;
