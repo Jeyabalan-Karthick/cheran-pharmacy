@@ -62,339 +62,249 @@
 
 
 
+
     <!--==============================
      Preloader
   ==============================-->
-   <div class="preloader" style="background-color: #124980;">
-        <div class="preloader-inner">
-            <img src="assets/img/favicons/favicon.ico" alt="Logo" style="display:block;margin:0 auto 10px auto;max-width:500px;">
-        </div>
+  <div class="preloader" style="background-color: #124980;">
+    <div class="preloader-inner">
+        <img src="assets/img/favicons/favicon.ico" alt="Logo" style="display:block;margin:0 auto 10px auto;max-width:500px;">
     </div>
-    <!--==============================
-    Mobile Menu
-  ============================== -->
-  ============================== -->
-    <div class="th-menu-wrapper">
-        <div class="th-menu-area text-center">
-            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/pharmacy.png" alt="Cheran College of Pharmacy"></a>
-            </div>
-            <div class="th-mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
+</div>
+<div class="popup-search-box d-none d-lg-block">
+    <button class="searchClose"><i class="fal fa-times"></i></button>
+    <form action="#">
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit"><i class="fal fa-search"></i></button>
+    </form>
+</div>
+<!--==============================
+Sidemenu
+============================== -->
+<div class="sidemenu-wrapper d-none d-lg-block ">
+    <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+        <div class="widget woocommerce widget_shopping_cart">
+            <h3 class="widget_title">Shopping cart</h3>
+            <div class="widget_shopping_cart_content">
+                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                        <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                        <a href="#"><img src="assets/img/product/product_thumb_1_1.jpg" alt="Cart Image">Plastic Book Bags</a>
+                        <span class="quantity">1 ×
+                            <span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$</span>940.00</span>
+                        </span>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Courses</a>
-                        <ul class="sub-menu">
-                            <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
-                            <li><a href="course-3.html">M.Pharm (Pharmaceutics)</a></li>
-                            <li><a href="course-4.html">M.Pharm (Pharmaceutical Analysis)</a></li>
-                            <li><a href="course-5.html">Pharm.D (Post Baccalaureate)</a></li>
-                            <li><a href="course-6.html">Pharm.D - Doctor of Pharmacy</a></li>
-                        </ul>
+                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                        <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                        <a href="#"><img src="assets/img/product/product_thumb_1_2.jpg" alt="Cart Image">The Genie Mind</a>
+                        <span class="quantity">1 ×
+                            <span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$</span>899.00</span>
+                        </span>
                     </li>
-                    <li>
-                        <a href="about.html">About Us</a>
+                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                        <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                        <a href="#"><img src="assets/img/product/product_thumb_1_3.jpg" alt="Cart Image">The Energy Book</a>
+                        <span class="quantity">1 ×
+                            <span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$</span>756.00</span>
+                        </span>
                     </li>
-                    <li>
-                        <a href="team.html">Faculty</a>
+                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                        <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                        <a href="#"><img src="assets/img/product/product_thumb_1_4.jpg" alt="Cart Image">Pencil Bag</a>
+                        <span class="quantity">1 ×
+                            <span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$</span>723.00</span>
+                        </span>
                     </li>
-                    <li>
-                        <a href="event.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                        <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                        <a href="#"><img src="assets/img/product/product_thumb_1_5.jpg" alt="Cart Image">Sharpner</a>
+                        <span class="quantity">1 ×
+                            <span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$</span>1080.00</span>
+                        </span>
                     </li>
                 </ul>
+                <p class="woocommerce-mini-cart__total total">
+                    <strong>Subtotal:</strong>
+                    <span class="woocommerce-Price-amount amount">
+                        <span class="woocommerce-Price-currencySymbol">$</span>4398.00</span>
+                </p>
+                <p class="woocommerce-mini-cart__buttons buttons">
+                    <a href="cart.html" class="th-btn wc-forward">View cart</a>
+                    <a href="checkout.html" class="th-btn checkout wc-forward">Checkout</a>
+                </p>
             </div>
         </div>
     </div>
-    <div class="popup-search-box d-none d-lg-block">
-        <button class="searchClose"><i class="fal fa-times"></i></button>
-        <form action="#">
-            <input type="text" placeholder="What are you looking for?">
-            <button type="submit"><i class="fal fa-search"></i></button>
-        </form>
-    </div>
-    <!--==============================
-    Sidemenu
+</div>
+<!--==============================
+Mobile Menu
 ============================== -->
-    <div class="sidemenu-wrapper d-none d-lg-block ">
-        <div class="sidemenu-content">
-            <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
-            <div class="widget  ">
-                <div class="th-widget-about">
-                    <div class="about-logo">
-                        <a href="index.html"><img src="assets/img/pharmacy.png" alt="Edura"></a>
-                    </div>
-                    <p class="about-text">Intrinsicly target low-risk high-yield sources with proactive niche markets. Holisticly strategize intermandated.</p>
-                    <div class="th-social style2">
-                        <h6 class="title">FOLLOW US ON:</h6>
-                        <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="widget  ">
-                <h3 class="widget_title">Recent Posts</h3>
-                <div class="recent-post-wrap">
-                    <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">How To Start Learn Online Study From Your Home</a></h4>
-                            <div class="recent-post-meta">
-                                <a href="blog.html"><i class="fal fa-calendar"></i>21/6/2023</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">A Guide for Teachers and Education Staff.</a></h4>
-                            <div class="recent-post-meta">
-                                <a href="blog.html"><i class="fal fa-calendar"></i>22/6/2023</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Educate Empower Excel Discover the Power.</a></h4>
-                            <div class="recent-post-meta">
-                                <a href="blog.html"><i class="fal fa-calendar"></i>25/6/2023</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="widget widget_contact  ">
-                <h3 class="widget_title">Get in touch!</h3>
-                <p class="contact-text">Fusce varius, dolor tempor interdum tristiquei bibendum service life.</p>
-                <div class="th-widget-contact">
-                    <div class="info-box-wrap">
-                        <div class="info-box_icon">
-                            <i class="fas fa-location-dot"></i>
-                        </div>
-                        <p class="info-box_text">
-                            147/I, Green Road, Gulshan Avenue, Panthapath, Dhaka
-                        </p>
-                    </div>
-                    <div class="info-box-wrap">
-                        <div class="info-box_icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <a href="mailto:info@Edura.com" class="info-box_link">info@edura.com</a>
-                    </div>
-                    <div class="info-box-wrap">
-                        <div class="info-box_icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <a href="tel:+11234567890" class="info-box_link">+256 214 203 215</a>
-                    </div>
-                </div>
-            </div>
+<div class="th-menu-wrapper">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="index.html"><img src="assets/img/pharmacy.png" alt="Cheran College of Pharmacy"></a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Courses</a>
+                    <ul class="sub-menu">
+                       <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
+                            <li><a href="course-3.html">M.Pharm (Pharmaceutics)</a></li>
+                            <li><a href="course-4.html">M.Pharm (Pharmacology)</a></li>
+                            <li><a href="course-5.html">Life Style Course</a></li>
+                            <li><a href="course-6.html">Pharm.D</a></li>
+                            <li><a href="course-7.html">Pharm.D (Post Baccalaureate)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="team.html">Faculty</a>
+                </li> <!-- <li>
+                    <a href="event.html">Events</a>
+                </li> -->
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--==============================
+</div>
+<!--==============================
 Header Area
 ==============================-->
-    <header class="th-header header-layout6">
-        <div class="header-top">
-            <div class="container">
-                <div class="row justify-content-center justify-content-md-between align-items-center gy-2">
-                    <div class="col-auto d-none d-md-block">
-                        <div class="header-links">
-                            <ul>
-                                <li><i class="far fa-phone"></i><a href="tel:+1044123456789">+1 (044) 123 456 789</a></li>
-                                <li class="d-none d-xl-inline-block"><i class="far fa-location-dot"></i>27 Division St, New York, USA</li>
-                                <li><i class="far fa-envelope"></i><a href="mailto:info@edura.com">info@edura.com</a></li>
-                            </ul>
-                        </div>
+<header class="th-header header-layout12">
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                <div class="col-auto d-none d-lg-block">
+                    <p class="header-notice">Admission Going On, Hurry To Enroll Now</p>
+                    <ul class="counter-list" data-offer-date="12/08/2023">
+                        <li>
+                            <div class="day count-number ">00</div>
+                            <span class="count-name">Days</span>
+                        </li>
+                        <li>
+                            <div class="hour count-number ">00</div>
+                            <span class="count-name">Hour</span>
+                        </li>
+                        <li>
+                            <div class="minute count-number ">00</div>
+                            <span class="count-name">Mins</span>
+                        </li>
+                        <li>
+                            <div class="seconds count-number ">00</div>
+                            <span class="count-name">Secs</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <div class="header-links">
+                        <ul>
+                            <li>
+                                <div class="header-social">
+                                    <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </li>
+                         
+                        </ul>
                     </div>
-                    <div class="col-auto">
-                        <div class="header-links">
-                            <ul>
-                                <li class="d-none d-lg-inline-block">
-                                    <div class="dropdown-link">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-wrapper">
+        <div class="sticky-active">
+            <!-- Main Menu Area -->
+            <div class="container">
+                <div class="menu-area">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/img/pharmacy.png" alt="Edura"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <nav class="main-menu d-none d-lg-inline-block">
+                                        <ul>
                                             <li>
-                                                <a href="#">German</a>
-                                                <a href="#">French</a>
-                                                <a href="#">Italian</a>
-                                                <a href="#">Latvian</a>
-                                                <a href="#">Spanish</a>
-                                                <a href="#">Greek</a>
+                                                <a href="home-12.html">Home</a>
+                                            </li>
+                                            <li >
+                                                <a href="about.html">About Us</a>
+                                               
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="course-2.html">Courses</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
+                                                    <li><a href="course-3.html">M.Pharm (Pharmaceutics) </a></li>
+                                                    <li><a href="course-4.html">M.Pharm (Pharmacology)</a></li>
+                                                    <li><a href="course-5.html">M.Pharm (Pharmaceutical Analysis)</a></li>
+                                                    <li><a href="course-6.html">Pharm.D</a></li>
+                                                    <li><a href="course-7.html">Pharm.D (Post Baccalaureate)</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                           
+                                            <li>
+                                                <a href="blog.html">Blog</a>
+                                               
+                                            </li>
+                                            <!-- <li>
+                                                <a href="event.html">Event</a>
+                                            </li> -->
+                                            <li>
+                                                <a href="contact.html">Contact</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="header-social">
-                                        <span class="social-title">Follow Us:</span>
-                                   <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
-                                        <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
-                                        <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sticky-wrapper">
-            <div class="sticky-active">
-                <!-- Main Menu Area -->
-                <div class="menu-area" data-bg-src="assets/img/update1/bg/pattern_bg_2.png">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-auto">
-                                <div class="header-logo">
-                                    <a href="index.html"><img src="assets/img/pharmacy.png" alt="Edura"></a>
+                                    </nav>
+                                    <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
                                 </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="row align-items-center">
-                                    <div class="col-auto">
-                                        <nav class="main-menu d-none d-lg-inline-block">
-                                            <ul>
-                                                <li class="menu-item-has-children">
-                                                    <a href="index.html">Home</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item-has-children">
-                                                            <a href="#">Multipage</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="index.html">Home University</a></li>
-                                                                <li><a href="home-2.html">Home Online Education</a></li>
-                                                                <li><a href="home-3.html">Home University Admission</a></li>
-                                                                <li><a href="home-4.html">Home Digital Education</a></li>
-                                                                <li><a href="home-5.html">Home Academy <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-6.html">Home Online Training <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-7.html">Home Online Mentors <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-8.html">Home Online Courses <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-9.html">Home Kindergarten <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-10.html">Home University <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-11.html">Online Education <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-12.html">Online Instructor <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-13.html">Skill Development <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-14.html">Home Trainer <span class="new-label">New</span></a></li>
-                                                                <li><a href="home-15.html">Home Admission <span class="new-label">New</span></a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item-has-children">
-                                                            <a href="#">Onepage</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="home1-onepage.html">University Onepage</a></li>
-                                                                <li><a href="home2-onepage.html">Online Education Onepage</a></li>
-                                                                <li><a href="home3-onepage.html">University Admission Onepage</a></li>
-                                                                <li><a href="home4-onepage.html">Digital Education Onepage</a></li>
-                                                                <li><a href="home5-onepage.html">Academy Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home6-onepage.html">Online Training Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home7-onepage.html">Online Mentors Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home8-onepage.html">Online Courses Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home9-onepage.html">Kindergarten Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home10-onepage.html">University Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home11-onepage.html">Online Education Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home12-onepage.html">Online Instructor Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home13-onepage.html">Skill Development Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home14-onepage.html">Trainer Onepage <span class="new-label">New</span></a></li>
-                                                                <li><a href="home15-onepage.html">Admission Onepage <span class="new-label">New</span></a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item-has-children">
-                                                            <a href="#">RTL</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="home1-rtl.html">University RTL</a></li>
-                                                                <li><a href="home2-rtl.html">Online Education RTL</a></li>
-                                                                <li><a href="home3-rtl.html">University Admission RTL</a></li>
-                                                                <li><a href="home4-rtl.html">Digital Education RTL</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Courses</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="course.html">Courses With Sidebar</a></li>
-                                                        <li><a href="course-2.html">Courses Without Sidebar</a></li>
-                                                        <li><a href="course-3.html">Courses Videos</a></li>
-                                                        <li><a href="course-details.html">Course Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Teachers</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="team.html">Instructors</a></li>
-                                                        <li><a href="team-details.html">Instructors Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Pages</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="about.html">About Us</a></li>
-                                                        <li class="menu-item-has-children">
-                                                            <a href="#">Shop</a>
-                                                            <ul class="sub-menu">
-                                                                <li><a href="shop.html">Shop</a></li>
-                                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                                <li><a href="cart.html">Cart Page</a></li>
-                                                                <li><a href="checkout.html">Checkout</a></li>
-                                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="event.html">Events</a></li>
-                                                        <li><a href="event-details.html">Event Details</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="error.html">Error Page</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">Blog</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">Contact</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                        <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
-                                    </div>
-                                    <div class="col-auto d-none d-xl-block">
-                                        <div class="header-button">
-                                            <button type="button" class="simple-icon me-3 searchBoxToggler"><i class="far fa-search"></i></button>
-                                            <a href="contact.html" class="th-btn style3">Apply Now<i class="fas fa-arrow-right ms-2"></i></a>
-                                            <a href="#" class="simple-icon style2 ms-3 sideMenuToggler"><i class="fa-sharp fa-solid fa-grid"></i></a>
-                                        </div>
+                                <div class="col-auto d-none d-xxl-block">
+                                    <!-- <div class="header-button">
+                                        <button type="button" class="icon-btn searchBoxToggler"><i class="far fa-search"></i></button>
+                                        <a href="wishlist.html" class="icon-btn">
+                                            <i class="far fa-heart"></i>
+                                            <span class="badge">3</span>
+                                        </a>
+                                        <a href="#" class="icon-btn sideMenuToggler">
+                                            <i class="far fa-cart-shopping"></i>
+                                            <span class="badge">5</span>
+                                        </a> -->
+                                        <a href="contact.html" class="th-btn ml-25">Reach Us</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="logo-shape"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <!--==============================
     Breadcumb
 ============================== -->
@@ -407,7 +317,8 @@ Header Area
             </div>
         <div class="container">
             <div class="breadcumb-content text-center">
-                <h1 class="breadcumb-title">Blog Details</h1>
+                <h1 class="breadcumb-title">Your Complete Guide to M.Pharm Admission 2026
+                </h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.html">Home</a></li>
                     <li>Blog Details</li>
@@ -428,44 +339,87 @@ Header Area
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a class="author" href="blog.html"><i class="far fa-user"></i>by David Smith</a>
-                                <a href="blog.html"><i class="fa-light fa-calendar-days"></i>05 June, 2023</a>
-                                <a href="blog-details.html"><i class="fa-light fa-book"></i>Business Analysis</a>
+                                <a class="author" href="blog.html"><i class="far fa-user"></i>by Cheran College Team</a>
+                                <a href="blog.html"><i class="fa-light fa-calendar-days"></i>2024</a>
+                                <a href="blog-details.html"><i class="fa-light fa-book"></i> M.Pharm</a>
                             </div>
-                            <h2 class="blog-title">Educate, Empower, Excel: Discover the Power of Learning!</h2>
-                            <p>Uniquely pursue emerging experiences before liemerging content. Efficiently underwhelm customer directed total linkage after B2C synergy. Dynamically simplify superior human capital whereas efficient infrastructures generate business web-readiness after wireless outsourcing.
-                            </p>
-                            <p>A platform dedicated to exploring the transformative power of education. We believe that education is not only a means to acquire knowledge but also a catalyst for personal growth, societal progress, and global development. In this blog, we aim to inspire, inform, and engage readers in conversations about the latest trends, insights, and innovations in the field of education.</p>
+                            <h2 class="blog-title">Your Complete Guide to M.Pharm Admission 2026 at Cheran College of Pharmacy</h2>
+                            <p>Want to take your pharmacy journey further? A Master of Pharmacy (M.Pharm) in Tamil Nadu at Cheran College of Pharmacy is your key to unlocking exciting opportunities in research, development, and high-paying jobs in the pharmaceutical world.</p>
+                            <p>We know the admission process can feel confusing. That’s why we’ve created this simple, step-by-step guide to walk you through everything: from eligibility to entrance exams and finally, how to apply.</p>
+                            <p>Let’s get started on your journey to becoming a master of pharmacy in Tamil Nadu with Cheran College of Pharmacy.</p>
 
-                            <blockquote>
-                                <p>Educational Strategies: We delve into effective teaching and learning strategies, instructional method, & innovative approaches to engage students and enhance learning outcomes. </p>
-                                <cite>Michel Clarck</cite>
-                            </blockquote>
+                            <h2 class="h3 mb-25 mt-45">M.Pharm Eligibility</h2>
+                            <p>Before you jump in, let’s make sure you have the right qualifications. The basic rules are similar for most M.Pharm colleges in Tamil Nadu:</p>
+                            <ul class="mb-35">
+                                <li><strong>Your Degree:</strong> You should hold a B.Pharm (Bachelor of Pharmacy) degree from a college recognized by the Pharmacy Council of India (PCI).</li>
+                                <li><strong>Your Marks:</strong> You typically need a minimum of 55% to 60% marks in your B.Pharm degree. <em>(At Cheran College, we require a minimum of 55% aggregate).</em></li>
+                                <li><strong>Your Internship:</strong> You should have completed your compulsory internship if it was part of your B.Pharm course.</li>
+                            </ul>
 
-                            <p>Educational Technology: We explore the role of technology in education, from e-learning platform and digital resource to virtual reality and artificial intelligence. We discuss how technology is shaping the educational landscape and revolutionizing the way we learn.</p>
-                            <p>Education Policy and Advocacy: We delve into education policy issue, discussing the challenge, reforms, and initiative aimed improving educational system at local national & international level. We highlight the importance of education advocacy and its impact on shaping equitable and inclusive education for all.</p>
+                            <h2 class="h3 mb-25 mt-45">M.Pharm Entrance Exams</h2>
+                            <p>Your score in a national or state-level entrance exam is your ticket to admission. Here are the main ones to know about:</p>
+                            <ul class="mb-35">
+                                <li><strong>GPAT (Graduate Pharmacy Aptitude Test):</strong> This is the big one. GPAT is a national-level exam, and a good score is accepted by almost all top M.Pharm colleges in Tamil Nadu, including ours. It checks your knowledge of pharmacy subjects.</li>
+                                <li><strong>TNPSC and State-Level Exams:</strong> Some seats are filled through exams conducted by the state government. Stay updated with their announcements if you’re considering this option.</li>
+                                <li><strong>Direct Admission Based on Marks:</strong> Don’t have an entrance exam score? Don’t worry! Many colleges, including us, offer a certain number of seats for students based directly on their B.Pharm marks. This is often called the Management Quota.</li>
+                            </ul>
 
-                            <h3 class="h4 mb-25 mt-45">Coaching for teachers improves retention</h3>
-                            <p>Student Success and Well-being: We focus on supporting student success and well-being, covering topics such as study skills, exam preparation, stress management, mental health, and student empowerment. We provide practical tips and strategies to help students thrive academically and personally.</p>
-                            <div class="blog-img mt-35">
-                                <img class="w-100" src="assets/img/blog/blog_inner_1.jpg" alt="Blog Image">
-                            </div>
+                            <h3 class="h4 mb-25 mt-45">M.Pharm Specializations at Cheran</h3>
+                            <p>Choosing your specialty is a big part of your M.Pharm journey. It decides what you'll become a master of! At Cheran College of Pharmacy, we offer specializations that match the hottest trends in the industry:</p>
                             <div class="checklist mb-35">
                                 <ul>
-                                    <li><span>1.</span> Educational Strategies: We delve into effective teaching and learning strategies, instructional methodologies, and innovative approaches to engage students and enhance learning outcomes.</li>
-                                    <li><span>2.</span> Educational Technology: We explore the role of technology in education, from e-learning platforms and digital resources to virtual reality and artificial intelligence. We discuss how technology is shaping the educational landscape and revolutionizing the way we learn.</li>
-                                    <li><span>3.</span> Lifelong Learning: We emphasize the importance of lifelong learning and personal development. We share tips and resources to foster a culture of continuous learning and skill development, both inside and outside the traditional classroom.</li>
+                                    <li><span>1.</span> <strong>Pharmaceutics:</strong> Learn how to develop new drugs and turn them into safe, effective medicines like tablets, capsules, and injections.</li>
+                                    <li><span>2.</span> <strong>Pharmacology:</strong> Dive deep into how drugs work inside the body. This is perfect for those interested in research and drug discovery.</li>
+                                    <li><span>3.</span> <strong>Pharmaceutical Analysis:</strong> Become an expert in testing medicines to ensure their quality, safety, and purity.</li>
+                                    <li><span>4.</span> <strong>Pharmacy Practice:</strong> Focus on the patient-facing side of pharmacy, often working directly in hospitals to advise on the best use of medicines.</li>
                                 </ul>
                             </div>
-                            <p>To stay updated on our latest blog posts, subscribe to our newsletter and follow us on social media platform. We look forward to embarking on this educational journey with you and creating a community of learners passionate about the power of education.</p>
+                            <p>Choosing the right specialization is the key to a fulfilling career.</p>
+
+                            <h3 class="h4 mb-25 mt-45">Your 5-Step Application Guide</h3>
+                            <p>Ready to apply? The process is simple. Here’s how you can secure your seat for the Master of Pharmacy in Tamil Nadu program at Cheran College:</p>
+                            <ol class="mb-35">
+                                <li><strong>Check Your Eligibility:</strong> First, make sure you meet the criteria we mentioned above. Gather all your documents like mark sheets and your internship completion certificate.</li>
+                                <li><strong>Get Your Exam Score (If applicable):</strong> If you are applying with GPAT or another exam score, make sure you have your scorecard ready.</li>
+                                <li><strong>Fill the Form Online:</strong> Visit our official website and find the ‘Admissions’ section. Click on the M.Pharm application form and fill in your personal, academic, and exam details carefully.</li>
+                                <li><strong>Upload Your Documents:</strong> You’ll need to upload scanned copies of your photo, ID proof, B.Pharm mark sheets, and your entrance exam scorecard (if you have one).</li>
+                                <li><strong>Pay the Fee & Submit:</strong> Finally, pay the application fee securely through our online payment gateway. Once you submit, note down your application number for future reference.</li>
+                            </ol>
+                            <p>That’s it! After that, our admissions team will reach out to guide you on the next steps.</p>
+
+                            <h3 class="h4 mb-25 mt-45">Why Do Students Choose Cheran College?</h3>
+                            <p>With so many options for M.Pharm in Tamil Nadu, why do students pick us? It’s more than just a degree.</p>
+                            <ul class="mb-35">
+                                <li><strong>Expert Teachers:</strong> Learn from highly qualified professors who have real-world industry and research experience.</li>
+                                <li><strong>Top-Notch Labs:</strong> Get hands-on training in our advanced laboratories filled with modern equipment.</li>
+                                <li><strong>Great Placements:</strong> We have a strong track record of placing our graduates in leading pharmaceutical companies and hospitals.</li>
+                            </ul>
+                            <p>We don’t just teach you from books; we prepare you for a real career.</p>
+
+                            <h3 class="h4 mb-25 mt-45">Frequently Asked Questions</h3>
+                            <div class="faq mb-35">
+                                <p><strong>Q: Is GPAT compulsory for M.Pharm at Cheran College?</strong><br>
+                                <strong>A:</strong> No, it is not the only way. While we accept GPAT scores, we also offer direct admission based on your B.Pharm marks for eligible students.</p>
+                                <p><strong>Q: What is the last date to apply?</strong><br>
+                                <strong>A:</strong> Admission deadlines can change. The best way is to check the ‘Admissions’ page on our website or call our counseling team directly for the most current information.</p>
+                                <p><strong>Q: What are the career options after an M.Pharm?</strong><br>
+                                <strong>A:</strong> An M.Pharm degree opens doors to become a Research Scientist, Medical Coder, Clinical Researcher, Professor, Regulatory Manager, and much more in the multi-billion dollar pharma industry.</p>
+                            </div>
+
+                            <h4 class="h5 mb-25 mt-45">Your Future in Pharmacy Starts Here</h4>
+                            <p>Choosing the right college for your Master of Pharmacy in Tamil Nadu is one of the most important decisions you'll make. It’s about finding a place that will support your dreams and give you the skills to achieve them.</p>
+                            <p>If you’re looking for a college that combines quality education, practical experience, and a pathway to a great career, you’ve found it.</p>
+                            <p class="mb-4">Ready to begin? Applying takes only a few clicks.</p>
                         </div>
                         <div class="share-links clearfix ">
                             <div class="row justify-content-between">
                                 <div class="col-md-auto">
                                     <span class="share-links-title">Tags:</span>
                                     <div class="tagcloud">
-                                        <a href="blog.html">Education</a>
-                                        <a href="blog.html">Online</a>
+                                        <a href="blog.html">master of pharmacy in Tamilnadu</a>
+                                        <a href="blog.html">mpharm colleges in Tamilnadu</a>
+                                        <a href="blog.html">Best mpharm colleges in Tamilnadu</a>
+                                        <a href="blog.html">m Pharm in Tamilnadu</a>
                                     </div>
                                 </div>
                                 <div class="col-md-auto text-xl-end">
@@ -480,7 +434,7 @@ Header Area
                             </div>
                         </div>
                     </div>
-                    <div class="th-comments-wrap ">
+                    <!-- <div class="th-comments-wrap ">
                         <h2 class="blog-inner-title h5"> Comments (3)</h2>
                         <ul class="comment-list">
                             <li class="th-comment-item">
@@ -531,9 +485,11 @@ Header Area
                                 </div>
                             </li>
                         </ul>
-                    </div> <!-- Comment end -->
+                    </div> -->
+                    
+                    <!-- Comment end -->
                     <!-- Comment Form -->
-                    <form class="th-comment-form ">
+                    <!-- <form class="th-comment-form ">
                         <div class="form-title">
                             <h3 class="blog-inner-title h5">Leave a Reply</h3>
                             <p class="mb-30">Your email address will not be published. Required fields are marked</p>
@@ -559,7 +515,7 @@ Header Area
                                 <button class="th-btn">Submit Message <i class="fas fa-arrow-right ms-1"></i></button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">
@@ -569,9 +525,9 @@ Header Area
                                 <button type="submit"><i class="far fa-search"></i></button>
                             </form>
                         </div>
-                        <div class="widget widget_categories  ">
-                            <h3 class="widget_title">Categories</h3>
-                            <ul>
+                        <!-- <div class="widget widget_categories  ">
+                            <h3 class="widget_title">Categories</h3> -->
+                            <!-- <ul>
                                 <li><a href="service-details.html">Design</a><span>(08)</span></li>
                                 <li><a href="service-details.html">Development</a> <span>(12)</span></li>
                                 <li><a href="service-details.html">Photography</a><span>(15)</span></li>
@@ -579,8 +535,8 @@ Header Area
                                 <li><a href="service-details.html">Health</a><span>(14)</span></li>
                                 <li><a href="service-details.html">Finance</a><span>(05)</span></li>
                                 <li><a href="service-details.html">Technology</a><span>(10)</span></li>
-                            </ul>
-                        </div>
+                            </ul> -->
+                        <!-- </div> -->
                         <div class="widget  ">
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="recent-post-wrap">
@@ -589,13 +545,14 @@ Header Area
                                         <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">How To Start Learn Online Study From Your Home</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Your Complete Guide to M.Pharm Admission 2026
+                                        </a></h4>
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><i class="fal fa-calendar"></i>21/6/2023</a>
+                                            <a href="blog.html"><i class="fal fa-calendar"></i>05/09/2025</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="recent-post">
+                                <!-- <div class="recent-post">
                                     <div class="media-img">
                                         <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
                                     </div>
@@ -605,8 +562,8 @@ Header Area
                                             <a href="blog.html"><i class="fal fa-calendar"></i>22/6/2023</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="recent-post">
+                                </div> -->
+                                <!-- <div class="recent-post">
                                     <div class="media-img">
                                         <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
                                     </div>
@@ -616,10 +573,10 @@ Header Area
                                             <a href="blog.html"><i class="fal fa-calendar"></i>25/6/2023</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="widget widget_tag_cloud  ">
+                        <!-- <div class="widget widget_tag_cloud  ">
                             <h3 class="widget_title">Popular Tags</h3>
                             <div class="tagcloud">
                                 <a href="blog.html">Business</a>
@@ -631,15 +588,12 @@ Header Area
                                 <a href="blog.html">Students</a>
                                 <a href="blog.html">UX</a>
                             </div>
-                        </div>
-                        <div class="widget widget_banner  " data-overlay="theme" data-opacity="9" data-bg-src="assets/img/widget/widget-banner-bg.png">
+                        </div> -->
+                        <div class="widget widget_banner" data-overlay="theme" data-opacity="9" data-bg-src="assets/img/widget/widget-banner-bg.png">
                             <div class="widget-banner">
-                                <h4 class="title">Need Help? We Are Here
-                                    To Help You</h4>
+                                <h4 class="title">Get in Touch</h4>
                                 <div class="logo"><img src="assets/img/pharmacy.png" alt="img"></div>
-                                <h5 class="subtitle">You Get Online Courses</h5>
-                                <a href="tel:+11156456825" class="link">+256 214 203 215</a>
-                                <a href="contact.html" class="th-btn style7">Contact Us Now <i class="far fa-arrow-right ms-1"></i></a>
+                                <h5 class="subtitle">+91 96777 34908, +91 77084 41116</h5>
                             </div>
                         </div>
                     </aside>
@@ -650,149 +604,309 @@ Header Area
     <!--==============================
 	Footer Area
 ==============================-->
-    <footer class="footer-wrapper footer-layout-default" data-bg-src="assets/img/bg/footer-bg.png">
-        <div class="shape-mockup footer-shape1 jump" data-left="60px" data-top="70px">
-                     
-        </div>
-        <div class="shape-mockup footer-shape2 jump-reverse" data-right="80px" data-bottom="120px">
-                
-        </div>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="newsletter-wrap">
-                            <h5 class="newsletter-title">Subscribe Our Newsletter For Latest Updates</h5>
-                            <form action="#" class="newsletter-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your Email">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <button type="submit" class="th-btn style3">Subscribe Now<i class="fas fa-arrow-right ms-2"></i></button>
-                            </form>
-                        </div>
+<footer class="footer-wrapper footer-layout-default" data-bg-src="assets/img/bg/footer-bg.png">
+    <div class="shape-mockup footer-shape1 jump" data-left="60px" data-top="70px">
+                 
+    </div>
+    <div class="shape-mockup footer-shape2 jump-reverse" data-right="80px" data-bottom="120px">
+            
+    </div>
+    <!-- <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
                     </div>
                 </div>
-            </div>
+                <!-- <div class="col-lg-9">
+                    <div class="newsletter-wrap">
+                        <h5 class="newsletter-title">Subscribe Our Newsletter For Latest Updates</h5>
+                        <form action="#" class="newsletter-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Email">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <button type="submit" class="th-btn style3">Subscribe Now<i class="fas fa-arrow-right ms-2"></i></button>
+                        </form>
+                    </div>
+                </div> -->
+            <!-- </div>
         </div>
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 col-xxl-3 col-xl-3">
-                        <div class="widget footer-widget">
-                            <div class="th-widget-about">
-                                <h3 class="widget_title">About Company</h3>
-                                <p class="about-text">Continually optimize backward manufactured products whereas communities negotiate life compelling alignments</p>
-                                <div class="th-social">
-                                    <h6 class="title text-white">FOLLOW US ON:</h6>
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://www.skype.com/"><i class="fab fa-skype"></i></a>
+    </div> --> 
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xxl-3 col-xl-3">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-about">
+                            <div class="col-lg-8">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Quick Links</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="course.html">Life Coach</a></li>
-                                    <li><a href="course.html">Business Coach</a></li>
-                                    <li><a href="course.html">Health Coach</a></li>
-                                    <li><a href="course.html">Development</a></li>
-                                    <li><a href="course.html">Web Design</a></li>
-                                    <li><a href="course.html">SEO Optimize</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Our Courses</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="course-details.html">Health Course</a></li>
-                                    <li><a href="course-details.html">Web Development</a></li>
-                                    <li><a href="course-details.html">UI/UX Design</a></li>
-                                    <li><a href="course-details.html">Life Style Course</a></li>
-                                    <li><a href="course-details.html">Digital Marketing</a></li>
-                                    <li><a href="course-details.html">Graphics Design</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Resources</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="contact.html">Community</a></li>
-                                    <li><a href="contact.html">Support</a></li>
-                                    <li><a href="contact.html">Video Guides</a></li>
-                                    <li><a href="contact.html">Documentation</a></li>
-                                    <li><a href="contact.html">Security</a></li>
-                                    <li><a href="contact.html">Template</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xxl-3 col-xl-3">
-                        <div class="widget widget_contact footer-widget">
-                            <h3 class="widget_title">Get in touch!</h3>
-                            <p class="contact-text">Fusce varius, dolor tempor interdum tristiquei bibendum service life.</p>
-                            <div class="th-widget-contact">
-                                <div class="info-box-wrap">
-                                    <div class="info-box_icon">
-                                        <i class="fas fa-location-dot"></i>
-                                    </div>
-                                    <p class="info-box_text">
-                                        147/I, Green Road, Gulshan Avenue, Panthapath, Dhaka
-                                    </p>
-                                </div>
-                                <div class="info-box-wrap">
-                                    <div class="info-box_icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <a href="mailto:info@Edura.com" class="info-box_link">info@edura.com</a>
-                                </div>
-                                <div class="info-box-wrap">
-                                    <div class="info-box_icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <a href="tel:+11234567890" class="info-box_link">+256 214 203 215</a>
-                                </div>
+                            <h3 class="widget_title">About Company</h3>
+                            <p class="about-text">Cheran College of Pharmacy stands as one of the best pharmacy colleges in TamilNadu, offering top pharmacy courses in TamilNadu, including B.Pharm, M.Pharm, Pharm.D and Pharm.D (PB) programs.</p>
+                            <div class="th-social">
+                                <h6 class="title text-white">FOLLOW US ON:</h6>
+                                <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="copyright-wrap">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-6">
-                        <p class="copyright-text">Copyright © 2023 <a href="index.html">Edura</a> All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-6 text-end d-none d-md-block">
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="about.html">Privacy Policy</a></li>
-                                <li><a href="about.html">Terms & Condition</a></li>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                              <li><a href="course.html">Home</a></li>
+                                <li><a href="course.html">About Us</a></li>
+                                <li><a href="course.html">Blog</a></li>
+                                <li><a href="course.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Our Courses</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                              <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
+                                <li><a href="course-3.html">M.Pharm (Pharmaceutics)</a></li>
+                                <li><a href="course-4.html">M.Pharm (Pharmacology)</a></li>
+                                <li><a href="course-5.html">Life Style Course</a></li>
+                                <li><a href="course-6.html">Pharm.D</a></li>
+                                <li><a href="course-7.html">Pharm.D (Post Baccalaureate)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Resources</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="../download-version/Rules & Regulations.html">Rules & Regulations</a></li>
+                                <li><a href="../download-version/terms-conditions.html">Terms and Conditions</a></li>
+                                <li><a href="../download-version/cookie-policy.html">Cookie Policy</a></li>
+                                <li><a href="../download-version/Admission Policy.html">Admission Policy</a></li>
+                                <li><a href="../download-version/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="../download-version/Refund and Cancellation Policy.html">Refund and Cancellation Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xxl-3 col-xl-3">
+                    <div class="widget widget_contact footer-widget">
+                        <h3 class="widget_title">Get in touch!</h3>
+                        <p class="contact-text">
+ Reach out to our team to learn more about admissions, programs, and campus life.</p>
+                        <div class="th-widget-contact">
+                            <div class="info-box-wrap">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <p class="info-box_text">
+                                    Siruvani Main Road ,
+Telungupalayam Pirivu Coimbatore
+                                </p>
+                            </div>
+                            <div class="info-box-wrap">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <a href="mailto:cheran.pharmacy@cherancolleges.org" class="info-box_link">cheran.pharmacy@cherancolleges.org</a>
+                            </div>
+                          <div class="info-box-wrap">
+                                    <div class="info-box_icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                        
+                                    <a href="tel:+917708441116" class="info-box_link"> +91 77084 41116</a>
+                                </div>
+                                <div class="info-box-wrap">
+                                    <div class="info-box_icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <a href="https://wa.me/+919677734908" class="info-box_link">+91 96777 34908</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="copyright-wrap" style="background-color: #000000;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center">
+                    <p class="copyright-text mb-0">
+                        Copyright © 2025
+                        <a href="index.html"> Cheran College of Pharmacy</a>
+                        All Rights Reserved Made with ❤ by 
+                        <a href="https://www.brandmindz.com/" target="_blank" rel="noopener">Brand Mindz</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><footer class="footer-wrapper footer-layout-default" data-bg-src="assets/img/bg/footer-bg.png">
+    <div class="shape-mockup footer-shape1 jump" data-left="60px" data-top="70px">
+                 
+    </div>
+    <div class="shape-mockup footer-shape2 jump-reverse" data-right="80px" data-bottom="120px">
+            
+    </div>
+    <!-- <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-9">
+                    <div class="newsletter-wrap">
+                        <h5 class="newsletter-title">Subscribe Our Newsletter For Latest Updates</h5>
+                        <form action="#" class="newsletter-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Email">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <button type="submit" class="th-btn style3">Subscribe Now<i class="fas fa-arrow-right ms-2"></i></button>
+                        </form>
+                    </div>
+                </div> -->
+            <!-- </div>
+        </div>
+    </div> --> 
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xxl-3 col-xl-3">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-about">
+                            <div class="col-lg-8">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
+                                </div>
+                            </div>
+                            <h3 class="widget_title">About Company</h3>
+                            <p class="about-text">Cheran College of Pharmacy stands as one of the best pharmacy colleges in TamilNadu, offering top pharmacy courses in TamilNadu, including B.Pharm, M.Pharm, Pharm.D and Pharm.D (PB) programs.</p>
+                            <div class="th-social">
+                                <h6 class="title text-white">FOLLOW US ON:</h6>
+                                <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                              <li><a href="course.html">Home</a></li>
+                                <li><a href="course.html">About Us</a></li>
+                                <li><a href="course.html">Blog</a></li>
+                                <li><a href="course.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Our Courses</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                              <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
+                                <li><a href="course-3.html">M.Pharm (Pharmaceutics)</a></li>
+                                <li><a href="course-4.html">M.Pharm (Pharmacology)</a></li>
+                                <li><a href="course-5.html">Life Style Course</a></li>
+                                <li><a href="course-6.html">Pharm.D</a></li>
+                                <li><a href="course-7.html">Pharm.D (Post Baccalaureate)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Resources</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="../download-version/Rules & Regulations.html">Rules & Regulations</a></li>
+                                <li><a href="../download-version/terms-conditions.html">Terms and Conditions</a></li>
+                                <li><a href="../download-version/cookie-policy.html">Cookie Policy</a></li>
+                                <li><a href="../download-version/Admission Policy.html">Admission Policy</a></li>
+                                <li><a href="../download-version/privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="../download-version/Refund and Cancellation Policy.html">Refund and Cancellation Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xxl-3 col-xl-3">
+                    <div class="widget widget_contact footer-widget">
+                        <h3 class="widget_title">Get in touch!</h3>
+                        <p class="contact-text">
+ Reach out to our team to learn more about admissions, programs, and campus life.</p>
+                        <div class="th-widget-contact">
+                            <div class="info-box-wrap">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <p class="info-box_text">
+                                    Siruvani Main Road ,
+Telungupalayam Pirivu Coimbatore
+                                </p>
+                            </div>
+                            <div class="info-box-wrap">
+                                <div class="info-box_icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <a href="mailto:cheran.pharmacy@cherancolleges.org" class="info-box_link">cheran.pharmacy@cherancolleges.org</a>
+                            </div>
+                          <div class="info-box-wrap">
+                                    <div class="info-box_icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                        
+                                    <a href="tel:+917708441116" class="info-box_link"> +91 77084 41116</a>
+                                </div>
+                                <div class="info-box-wrap">
+                                    <div class="info-box_icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <a href="https://wa.me/+919677734908" class="info-box_link">+91 96777 34908</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap" style="background-color: #000000;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center">
+                    <p class="copyright-text mb-0">
+                        Copyright © 2025
+                        <a href="index.html"> Cheran College of Pharmacy</a>
+                        All Rights Reserved Made with ❤ by 
+                        <a href="https://www.brandmindz.com/" target="_blank" rel="noopener">Brand Mindz</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!--********************************
 			Code End  Here 
