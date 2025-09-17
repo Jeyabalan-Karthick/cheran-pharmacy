@@ -312,7 +312,7 @@ Hero Area
             <div class="hero-style12">
                 <h1 class="hero-title">Best Pharmacy College in Tamilnadu</h1>
                 <p class="hero-text">Join our B.Pharm and M.Pharm programs designed for success.</p>
-                <a href="#" class="th-btn" id="enrollBtn">Apply Now</a>
+                <button type="button" class="th-btn" id="enrollBtn">Apply Now</button>
                 <div class="hero-counter-wrap">
                     <div class="hero-counter">
                         <!-- <div class="hero-counter_icon">
@@ -1422,49 +1422,55 @@ Telungupalayam Pirivu Coimbatore
     <script src="assets/js/main.js"></script>
 
     <!-- Enrollment Popup Form -->
+    
     <div id="enrollPopup" class="enroll-popup-overlay">
         <div class="enroll-popup-content">
-            <div class="enroll-popup-header">
-                <h2>Enroll Now</h2>
-                <p>Get details in your inbox right now.</p>
-                <button class="enroll-popup-close" id="closeEnrollPopup">&times;</button>
+            <div class="el-contact-left-form">
+                <!-- <img src="assets/img/icon/contact-form-icon.svg" alt="Contact Form Icon"> -->
             </div>
-            <form class="enroll-form" id="enrollForm">
-                <div class="form-group">
-                    <input type="text" name="fullName" placeholder="Full Name" required>
+            <div class="el-contact-form-box">
+                <div class="enroll-popup-header">
+                    <h2>Enroll Now</h2>
+                    <p>Get details in your inbox right now.</p>
+                    <button class="enroll-popup-close" id="closeEnrollPopup">&times;</button>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="mobile" placeholder="Mobile Number" required>
-                </div>
-                <div class="form-group">
-                    <select name="courseType" required>
-                        <option value="">Course Type</option>
-                        <option value="bpharm">Bachelor of Pharmacy (B.Pharm)</option>
-                        <option value="mpharm-pharmaceutics">M.Pharm (Pharmaceutics)</option>
-                        <option value="mpharm-pharmacology">M.Pharm (Pharmacology)</option>
-                        <option value="mpharm-analysis">M.Pharm (Pharmaceutical Analysis)</option>
-                        <option value="pharmd">Pharm.D - Doctor of Pharmacy</option>
-                        <option value="pharmd-pb">Pharm.D (Post Baccalaureate)</option>
-                    </select>
-                </div>
-                <div class="form-row">
+                <form class="enroll-form" id="enrollForm">
                     <div class="form-group">
-                        <select name="gender" required>
-                            <option value="">Gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-group course-select">
+                        <select name="courseType" required>
+                            <option value="">Course Type 1</option>
+                            <option value="bpharm">Bachelor of Pharmacy (B.Pharm)</option>
+                            <option value="mpharm-pharmaceutics">M.Pharm (Pharmaceutics)</option>
+                            <option value="mpharm-pharmacology">M.Pharm (Pharmacology)</option>
+                            <option value="mpharm-analysis">M.Pharm (Pharmaceutical Analysis)</option>
+                            <option value="pharmd">Pharm.D - Doctor of Pharmacy</option>
+                            <option value="pharmd-pb">Pharm.D (Post Baccalaureate)</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <input type="date" name="dateOfBirth" required>
+                    <div class="form-row">
+                        <div class="form-group gender-field">
+                            <select name="gender" required>
+                                <option value="">Male</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group date-field">
+                            <input type="date" name="dateOfBirth" placeholder="Date of birth" required>
+                        </div>
                     </div>
-                </div>
-                <button type="submit" class="enroll-submit-btn">Submit</button>
-            </form>
+                    <button type="submit" class="enroll-submit-btn">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 
