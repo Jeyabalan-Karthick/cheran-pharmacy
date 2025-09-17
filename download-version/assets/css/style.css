@@ -8266,6 +8266,232 @@ ol.wp-block-rss {
 
 
 
+/* Enrollment Popup Form Styles */
+.enroll-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.enroll-popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.enroll-popup-content {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 0;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
+}
+
+.enroll-popup-overlay.show .enroll-popup-content {
+  transform: scale(1);
+}
+
+.enroll-popup-header {
+  background: linear-gradient(135deg, #124980 0%, #1e6bb8 100%);
+  color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.enroll-popup-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  font-family: var(--title-font);
+  letter-spacing: 0.5px;
+}
+
+.enroll-popup-header p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.95;
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+
+.enroll-popup-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+
+.enroll-popup-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.enroll-form {
+  padding: 40px 30px 30px 30px;
+  background: #f8f9fa;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 18px 20px;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: var(--body-font);
+  background-color: white;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #124980;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(18, 73, 128, 0.1);
+  transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-right: 50px;
+  appearance: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.enroll-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #124980 0%, #1e6bb8 100%);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enroll-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(18, 73, 128, 0.3);
+}
+
+.enroll-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .enroll-popup-content {
+    width: 95%;
+    margin: 20px;
+  }
+  
+  .enroll-popup-header {
+    padding: 30px 20px 25px 20px;
+  }
+  
+  .enroll-popup-header h2 {
+    font-size: 28px;
+  }
+  
+  .enroll-popup-header p {
+    font-size: 16px;
+  }
+  
+  .enroll-form {
+    padding: 30px 20px 25px 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 15px 18px;
+    font-size: 15px;
+  }
+  
+  .enroll-submit-btn {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enroll-popup-header h2 {
+    font-size: 22px;
+  }
+  
+  .enroll-popup-header p {
+    font-size: 14px;
+  }
+  
+  .enroll-form {
+    padding: 20px 15px;
+  }
+}
+
 /* Header 13 ---------------------------------- */
 .header-layout13 .header-button {
   padding-left: 0px;

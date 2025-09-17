@@ -1335,5 +1335,102 @@
     //       return false;
     //     }
     //   }
+
+    /*----------- Enrollment Popup Form ----------*/
+    $(document).ready(function() {
+        // Show popup when Apply Now button is clicked
+        $('#enrollBtn').on('click', function(e) {
+            e.preventDefault();
+            $('#enrollPopup').addClass('show');
+            $('body').css('overflow', 'hidden'); // Prevent background scrolling
+        });
+
+        // Hide popup when close button is clicked
+        $('#closeEnrollPopup').on('click', function() {
+            $('#enrollPopup').removeClass('show');
+            $('body').css('overflow', 'auto'); // Restore scrolling
+        });
+
+        // Hide popup when clicking outside the form
+        $('#enrollPopup').on('click', function(e) {
+            if (e.target === this) {
+                $('#enrollPopup').removeClass('show');
+                $('body').css('overflow', 'auto'); // Restore scrolling
+            }
+        });
+
+        // Hide popup when pressing Escape key
+        $(document).on('keydown', function(e) {
+            if (e.key === 'Escape' && $('#enrollPopup').hasClass('show')) {
+                $('#enrollPopup').removeClass('show');
+                $('body').css('overflow', 'auto'); // Restore scrolling
+            }
+        });
+
+        // Form submission handling
+        $('#enrollForm').on('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            var formData = {
+                fullName: $('input[name="fullName"]').val(),
+                email: $('input[name="email"]').val(),
+                mobile: $('input[name="mobile"]').val(),
+                courseType: $('select[name="courseType"]').val(),
+                gender: $('select[name="gender"]').val(),
+                dateOfBirth: $('input[name="dateOfBirth"]').val()
+            };
+
+            // Basic validation
+            if (!formData.fullName || !formData.email || !formData.mobile || !formData.courseType || !formData.gender || !formData.dateOfBirth) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Mobile validation (basic)
+            var mobileRegex = /^[0-9]{10}$/;
+            if (!mobileRegex.test(formData.mobile.replace(/\D/g, ''))) {
+                alert('Please enter a valid 10-digit mobile number.');
+                return;
+            }
+
+            // Show loading state
+            var submitBtn = $('.enroll-submit-btn');
+            var originalText = submitBtn.text();
+            submitBtn.text('Submitting...').prop('disabled', true);
+
+            // Simulate form submission (replace with actual API call)
+            setTimeout(function() {
+                // Reset form
+                $('#enrollForm')[0].reset();
+                
+                // Reset button
+                submitBtn.text(originalText).prop('disabled', false);
+                
+                // Hide popup
+                $('#enrollPopup').removeClass('show');
+                $('body').css('overflow', 'auto');
+                
+                // Show success message
+                alert('Thank you for your interest! We will contact you soon with more details.');
+                
+                // Here you would typically send the data to your server
+                console.log('Form submitted:', formData);
+                
+            }, 2000);
+        });
+
+        // Initialize nice select for dropdowns
+        if ($('.enroll-form select').length) {
+            $('.enroll-form select').niceSelect();
+        }
+    });
     
 })(jQuery);
