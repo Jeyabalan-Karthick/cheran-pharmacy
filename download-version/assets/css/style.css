@@ -8382,6 +8382,15 @@ ol.wp-block-rss {
   height: 50px;
 }
 
+/* Remove space between About and Why Choose Us sections */
+#about-sec.space {
+  padding-bottom: 0;
+}
+
+.why-area-1.space {
+  padding-top: 0;
+}
+
 /* Make the course select full width like the name input */
 .form-group.course-select {
   width: 100%;
@@ -8531,6 +8540,15 @@ ol.wp-block-rss {
   .enroll-submit-btn {
     padding: 16px;
     font-size: 16px;
+  }
+  
+  /* Remove space between About and Why Choose Us sections on mobile */
+  #about-sec.space {
+    padding-bottom: 0;
+  }
+  
+  .why-area-1.space {
+    padding-top: 0;
   }
 }
 
@@ -16718,8 +16736,8 @@ span.select2-selection.select2-selection--single:focus {
 .map-sec .map iframe {
   height: 100%;
   width: 100%;
-  -webkit-filter: grayscale(100);
-          filter: grayscale(100);
+  /* -webkit-filter: grayscale(100);
+          filter: grayscale(100); */
 }
 
 @media (max-width: 767px) {
