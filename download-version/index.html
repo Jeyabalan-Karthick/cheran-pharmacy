@@ -44,12 +44,59 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .enroll-popup-close {
+            color: #333 !important;
+            background: transparent !important;
+            font-size: 30px !important;
+            font-weight: 400 !important;
+        }
+        .enroll-popup-close:hover {
+            background: rgba(0, 0, 0, 0.1) !important;
+        }
+        .el-contact-form-box {
+            width: 100%;
+        }
+        .enroll-form .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group input, .form-group select {
+            height: 50px;
+        }
+        input[type="text"][name="dateOfBirth"]::placeholder {
+            color: #999;
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .form-row .form-group {
+            width: 50%;
+            margin-bottom: 0;
+        }
+        .form-group select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+            padding-right: 2.5rem;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <!--[if lte IE 9]>
+    <!-- [if lte IE 9]>
     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
@@ -64,7 +111,7 @@
 
     <!--==============================
      Preloader
-  ==============================-->
+  ============================== -->
     <div class="preloader" style="background-color: #124980;">
         <div class="preloader-inner">
             <img src="assets/img/favicons/favicon.ico" alt="Logo" style="display:block;margin:0 auto 10px auto;max-width:500px;">
@@ -768,7 +815,7 @@ Cta Area
                 <p class="cta-text">Experience our cutting-edge labs, digital classrooms, and vibrant student life. Book a campus tour or schedule a virtual session now.</p>
             </div>
             <div class="btn-group justify-content-center">
-                <a href="about.html" class="th-btn style3">Join Now<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="#" class="th-btn style3" id="joinNowBtn">Join Now<i class="fas fa-arrow-right ms-2"></i></a>
                 <!-- <a href="contact.html" class="th-btn style2">Become A Teacher<i class="fas fa-arrow-right ms-2"></i></a> -->
             </div>
         </div>
@@ -1329,7 +1376,7 @@ Contact Area
                     <div class="widget widget_contact footer-widget">
                         <h3 class="widget_title">Get in touch!</h3>
                         <p class="contact-text">
- Reach out to our team to learn more about admissions, programs, and campus life.</p>
+ Reach out to our team to learn more about admissions, programs, and campus life.</p>
                         <div class="th-widget-contact">
                             <div class="info-box-wrap">
                                 <div class="info-box_icon">
@@ -1421,13 +1468,40 @@ Telungupalayam Pirivu Coimbatore
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const enrollPopup = document.getElementById('enrollPopup');
+            const joinNowBtn = document.getElementById('joinNowBtn');
+            const closeEnrollPopup = document.getElementById('closeEnrollPopup');
+
+            if (joinNowBtn) {
+                joinNowBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    enrollPopup.classList.add('show');
+                });
+            }
+
+            if (closeEnrollPopup) {
+                closeEnrollPopup.addEventListener('click', function() {
+                    enrollPopup.classList.remove('show');
+                });
+            }
+
+            if (enrollPopup) {
+                enrollPopup.addEventListener('click', function(e) {
+                    if (e.target === enrollPopup) {
+                        enrollPopup.classList.remove('show');
+                    }
+                });
+            }
+        });
+    </script>
+
     <!-- Enrollment Popup Form -->
     
     <div id="enrollPopup" class="enroll-popup-overlay">
         <div class="enroll-popup-content">
-            <div class="el-contact-left-form">
-                <!-- <img src="assets/img/icon/contact-form-icon.svg" alt="Contact Form Icon"> -->
-            </div>
+            
             <div class="el-contact-form-box">
                 <div class="enroll-popup-header">
                     <h2>Enroll Now</h2>
@@ -1445,8 +1519,8 @@ Telungupalayam Pirivu Coimbatore
                         <input type="tel" name="mobile" placeholder="Mobile Number" required>
                     </div>
                     <div class="form-group course-select">
-                        <select name="courseType" required>
-                            <option value="">Course Type 1</option>
+                        <select name="courseType" id="courseType" required>
+                            <option value="" disabled selected>Courses</option>
                             <option value="bpharm">Bachelor of Pharmacy (B.Pharm)</option>
                             <option value="mpharm-pharmaceutics">M.Pharm (Pharmaceutics)</option>
                             <option value="mpharm-pharmacology">M.Pharm (Pharmacology)</option>
@@ -1455,18 +1529,16 @@ Telungupalayam Pirivu Coimbatore
                             <option value="pharmd-pb">Pharm.D (Post Baccalaureate)</option>
                         </select>
                     </div>
-                    <div class="form-row">
                         <div class="form-group gender-field">
-                            <select name="gender" required>
-                                <option value="">Male</option>
+                        <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group date-field">
-                            <input type="date" name="dateOfBirth" placeholder="Date of birth" required>
-                        </div>
+                        <input type="text" name="dateOfBirth" placeholder="Date of Birth (dd-mm-yyyy)" onfocus="(this.type='date')" onblur="(this.type='text')" required>
                     </div>
                     <button type="submit" class="enroll-submit-btn">Submit</button>
                 </form>

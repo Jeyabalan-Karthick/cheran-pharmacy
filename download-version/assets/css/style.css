@@ -8308,7 +8308,7 @@ ol.wp-block-rss {
 .enroll-popup-header {
   background: #FBFBFB;
   color: white;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 30px 0px 30px;
   border-radius: 20px 20px 0 0;
   text-align: left;
   position: relative;
@@ -8356,7 +8356,7 @@ ol.wp-block-rss {
 }
 
 .enroll-form {
-  padding: 40px 30px 30px 30px;
+  padding: 20px 30px 30px 30px;
   background: #f8f9fa;
   width: 100%;
   box-sizing: border-box;
