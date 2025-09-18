@@ -90,6 +90,66 @@
             display: none;
             -webkit-appearance: none;
         }
+        .header-top .header-links ul li a {
+            font-size: 14px;
+        }
+
+        /* Floating Social Media Menu */
+        .floating-social-menu {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .floating-social-menu a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: white;
+            background-color: #124980;
+            text-decoration: none;
+            height: 50px;
+            padding: 0 10px;
+            margin-bottom: 2px;
+            border-radius: 5px 0 0 5px;
+            transition: width 0.3s ease, background-color 0.3s ease;
+            width: 50px;
+            white-space: nowrap;
+        }
+
+        .floating-social-menu a:hover {
+            width: 160px;
+            background-color: #1e6bb8;
+        }
+
+        .floating-social-menu a .social-name {
+            display: inline-block;
+            opacity: 0;
+            max-width: 0;
+            transition: max-width 0.3s ease, opacity 0.2s ease, margin-right 0.3s ease;
+            vertical-align: middle;
+            font-size: 16px;
+            overflow: hidden;
+            margin-right: 0;
+        }
+
+        .floating-social-menu a:hover .social-name {
+            opacity: 1;
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        .floating-social-menu a i {
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -238,27 +298,15 @@
         <div class="header-top">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
-                    <!-- <div class="col-auto d-none d-lg-block">
-                        <p class="header-notice">Admission Going On, Hurry To Enroll Now</p>
-                        <ul class="counter-list" data-offer-date="12/08/2023">
-                            <li>
-                                <div class="day count-number ">00</div>
-                                <span class="count-name">Days</span>
-                            </li>
-                            <li>
-                                <div class="hour count-number ">00</div>
-                                <span class="count-name">Hour</span>
-                            </li>
-                            <li>
-                                <div class="minute count-number ">00</div>
-                                <span class="count-name">Mins</span>
-                            </li>
-                            <li>
-                                <div class="seconds count-number ">00</div>
-                                <span class="count-name">Secs</span>
-                            </li>
-                        </ul>
-                    </div> -->
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-links">
+                            <ul>
+                                <li><a href="tel:+917708441116"><i class="fas fa-phone me-2"></i>+91 7708441116</a></li>
+                                <li><a href="https://wa.me/919677734908"><i class="fab fa-whatsapp me-2"></i>+91 9677734908</a></li>
+                                <li><a href="mailto:admissions@cherancolleges.org"><i class="fas fa-envelope me-2"></i>admissions@cherancolleges.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="col-auto">
                         <div class="header-links">
                             <ul>
@@ -271,10 +319,8 @@
                                         <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
                                     </div>
                                 </li>
-                             
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -477,7 +523,7 @@ About Area
                             <img class="tilt-active" src="assets/img/bg/ABOUTLEADER(1).png" alt="About">
                         </div>
                         <div class="about-grid">
-                            <h3 class="about-grid_year"><span class="counter-number">500</span>+</h3>
+                            <h3 class="about-grid_year"><span class="counter-nuber">500</span>+</h3>
                             <p class="about-grid_text">Students Active Our Courses</p>
                         </div>
                         <div class="img2">
@@ -689,7 +735,7 @@ Why choose us Area
                         <img src="assets/img/bg/why choose.jpg" alt="img">
                     </div>
                     <div class="student-count jump-reverse">
-                        <h5 class="title"><span class="text-theme"><span class="counter-number">500</span>+</span> Active Students</h5>
+                        <h5 class="title"><span class="text-theme"><span class="counter-">500</span>+</span> Active Students</h5>
                         <!-- <img src="assets/img/normal/student-group_1_1.png" alt="img"> -->
                     </div>
                     <!-- <div class="text-end">
@@ -700,7 +746,7 @@ Why choose us Area
             <div class="col-xl-6">
                 <div class="wcu-wrap1">
                     <div class="title-area mb-25">
-                        <span class="sub-title"><i class="fal fa-book me-2"></i> WHY CHOOSE US</span>
+                        <span class="sub-title"><i class="fal fa-book me-2 mt-5"></i> WHY CHOOSE US</span>
                         <h2 class="sec-title">Why Choose Cheran</h2>
                         <p class="sec-text mt-20">We are committed to shaping skilled and industry ready pharmacists. Our programs combine academic excellence, practical training and career support to prepare students for a successful future.</p>
                     </div>
@@ -758,7 +804,7 @@ Why choose us Area
 <!--==============================
 Counter Area  
 ==============================-->
-<div class="container">
+<!-- <div class="container">
     <div class="counter-area-1 bg-theme" data-bg-src="assets/img/bg/counter-bg_1.png">
         <div class="row justify-content-between">
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
@@ -787,7 +833,7 @@ Counter Area
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--==============================
 Cta Area  
 ==============================-->
@@ -837,7 +883,7 @@ Blog Area
                     <img src="./assets/img/blog/M.Pharm Admission 2026.png" alt="blog image" style="width: 100%; height: auto;">
                 </div>
                 <div class="blog-content">
-                    <a class="tag" href="blog.html">Admission</a>
+                    <!-- <a class="tag" href="blog.html">Admission</a> -->
                     <h3 class="blog-title"><a href="blog-details.html">Your Complete Guide to M.Pharm Admission 2026</a></h3>
                     <div class="blog-meta style2">
                         <a href="blog.html"><i class="far fa-clock"></i>05 Sept, 2023</a>
@@ -1449,6 +1495,8 @@ Telungupalayam Pirivu Coimbatore
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Magnific Popup -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- Counter Up -->
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- Circle Progress -->
@@ -1544,6 +1592,21 @@ Telungupalayam Pirivu Coimbatore
                 </form>
             </div>
         </div>
+    </div>
+
+    <div class="floating-social-menu">
+        <a href="https://www.facebook.com/Cherangroupofinstitutions" target="_blank">
+            <span class="social-name">Facebook</span>
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cherangroupofinstitutions_/" target="_blank">
+            <span class="social-name">Instagram</span>
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/" target="_blank">
+            <span class="social-name">LinkedIn</span>
+            <i class="fab fa-linkedin-in"></i>
+        </a>
     </div>
 
 
