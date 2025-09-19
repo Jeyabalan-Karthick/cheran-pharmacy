@@ -8382,6 +8382,66 @@ ol.wp-block-rss {
   height: 50px;
 }
 
+/* Header Contact Bar Styles */
+.header-contact-bar {
+  background: #124980;
+  padding: 12px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.header-contact-bar .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.header-contact-bar .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-contact-bar .contact-item:hover {
+  color: #f0f0f0;
+}
+
+.header-contact-bar .contact-item i {
+  font-size: 16px;
+  width: 16px;
+  text-align: center;
+}
+
+.header-contact-bar .header-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.header-contact-bar .header-social a {
+  color: white;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.header-contact-bar .header-social a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
 /* Remove space between About and Why Choose Us sections */
 #about-sec.space {
   padding-bottom: 0;
@@ -8542,6 +8602,28 @@ ol.wp-block-rss {
     font-size: 16px;
   }
   
+  /* Header Contact Bar Mobile Styles */
+  .header-contact-bar .contact-info {
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .header-contact-bar .contact-item {
+    font-size: 13px;
+  }
+  
+  .header-contact-bar .header-social {
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .header-contact-bar .header-social a {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
   /* Remove space between About and Why Choose Us sections on mobile */
   #about-sec.space {
     padding-bottom: 0;
@@ -8553,6 +8635,32 @@ ol.wp-block-rss {
 }
 
 @media (max-width: 480px) {
+  /* Header Contact Bar Small Mobile Styles */
+  .header-contact-bar {
+    padding: 10px 0;
+  }
+  
+  .header-contact-bar .contact-info {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .header-contact-bar .contact-item {
+    font-size: 12px;
+    justify-content: center;
+  }
+  
+  .header-contact-bar .header-social {
+    gap: 10px;
+  }
+  
+  .header-contact-bar .header-social a {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+  
   .enroll-popup-header h2 {
     font-size: 22px;
   }
