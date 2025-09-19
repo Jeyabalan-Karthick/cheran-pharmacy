@@ -9951,9 +9951,10 @@ ol.wp-block-rss {
 
 .breadcumb-wrapper {
   background-color: var(--title-color);
-  padding: 250px 0;
+  padding: 200px 0;
   text-align: center;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 .breadcumb-wrapper:before {
