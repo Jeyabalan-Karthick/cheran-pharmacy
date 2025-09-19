@@ -2767,7 +2767,7 @@
     
             // Initialize nice select for dropdowns
             if ($('.enroll-form select').length) {
-                $('.enroll-form select').niceSelect();
+                // $('.enroll-form select').niceSelect();
             }
         });
         
