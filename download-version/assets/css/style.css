@@ -8451,6 +8451,11 @@ ol.wp-block-rss {
   padding-top: 0;
 }
 
+/* Reduce bottom space for blog section */
+#blog-sec.space {
+  padding-bottom: 10px;
+}
+
 /* Make the course select full width like the name input */
 .form-group.course-select {
   width: 100%;
@@ -8631,6 +8636,11 @@ ol.wp-block-rss {
   
   .why-area-1.space {
     padding-top: 0;
+  }
+  
+  /* Reduce bottom space for blog section on mobile */
+  #blog-sec.space {
+    padding-bottom: 10px;
   }
 }
 
