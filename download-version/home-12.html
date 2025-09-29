@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Edura - Online Courses & Education HTML Template - Home Twelve</title>
+    <title>Cheran College of Pharmacy</title>
     <meta name="author" content="themeholy">
-    <meta name="description" content="Edura - Online Courses & Education HTML Template">
-    <meta name="keywords" content="Edura - Online Courses & Education HTML Template">
+    <meta name="description" content="Cheran Academy">
+    <meta name="keywords" content="Cheran Academy">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -44,12 +44,119 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .enroll-popup-close {
+            color: #333 !important;
+            background: transparent !important;
+            font-size: 30px !important;
+            font-weight: 400 !important;
+        }
+        .enroll-popup-close:hover {
+            background: rgba(0, 0, 0, 0.1) !important;
+        }
+        .el-contact-form-box {
+            width: 100%;
+        }
+        .enroll-form .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group input, .form-group select {
+            height: 50px;
+        }
+        input[type="text"][name="dateOfBirth"]::placeholder {
+            color: #999;
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .form-row .form-group {
+            width: 50%;
+            margin-bottom: 0;
+        }
+        .form-group select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+            padding-right: 2.5rem;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+        .header-top .header-links ul li a {
+            font-size: 14px;
+        }
+
+        /* Floating Social Media Menu */
+        .floating-social-menu {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .floating-social-menu a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: white;
+            background-color: #124980;
+            text-decoration: none;
+            height: 50px;
+            padding: 0 10px;
+            margin-bottom: 2px;
+            border-radius: 5px 0 0 5px;
+            transition: width 0.3s ease, background-color 0.3s ease;
+            width: 50px;
+            white-space: nowrap;
+        }
+
+        .floating-social-menu a:hover {
+            width: 160px;
+            background-color: #1e6bb8;
+        }
+
+        .floating-social-menu a .social-name {
+            display: inline-block;
+            opacity: 0;
+            max-width: 0;
+            transition: max-width 0.3s ease, opacity 0.2s ease, margin-right 0.3s ease;
+            vertical-align: middle;
+            font-size: 16px;
+            overflow: hidden;
+            margin-right: 0;
+        }
+
+        .floating-social-menu a:hover .social-name {
+            opacity: 1;
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        .floating-social-menu a i {
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <!--[if lte IE 9]>
+    <!-- [if lte IE 9]>
     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
@@ -64,7 +171,7 @@
 
     <!--==============================
      Preloader
-  ==============================-->
+  ============================== -->
     <div class="preloader" style="background-color: #124980;">
         <div class="preloader-inner">
             <img src="assets/img/favicons/favicon.ico" alt="Logo" style="display:block;margin:0 auto 10px auto;max-width:500px;">
@@ -148,12 +255,12 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/pharmacy.png" alt="Cheran College of Pharmacy"></a>
+                <a href="./index.html"><img src="assets/img/pharmacy.png" alt="Cheran College of Pharmacy"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">Courses</a>
@@ -188,64 +295,32 @@
 	Header Area
 ==============================-->
     <header class="th-header header-layout12">
-        <!-- Contact Information Bar -->
-        <div class="header-contact-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+91 7708441116</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>+91 9677734908</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>admissions@cherancolleges.org</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-4">
-                        <div class="header-social">
-                            <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
         <div class="header-top">
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
                     <div class="col-auto d-none d-lg-block">
-                        <p class="header-notice">Admission Going On, Hurry To Enroll Now</p>
-                        <ul class="counter-list" data-offer-date="12/08/2023">
-                            <li>
-                                <div class="day count-number ">00</div>
-                                <span class="count-name">Days</span>
-                            </li>
-                            <li>
-                                <div class="hour count-number ">00</div>
-                                <span class="count-name">Hour</span>
-                            </li>
-                            <li>
-                                <div class="minute count-number ">00</div>
-                                <span class="count-name">Mins</span>
-                            </li>
-                            <li>
-                                <div class="seconds count-number ">00</div>
-                                <span class="count-name">Secs</span>
-                            </li>
-                        </ul>
+                        <div class="header-links">
+                            <ul>
+                                <li><a href="tel:+917708441116"><i class="fas fa-phone me-2"></i>+91 7708441116</a></li>
+                                <li><a href="https://wa.me/919677734908"><i class="fab fa-whatsapp me-2"></i>+91 9677734908</a></li>
+                                <li><a href="mailto:admissions@cherancolleges.org"><i class="fas fa-envelope me-2"></i>admissions@cherancolleges.org</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-auto">
-                        <!-- Social media moved to contact bar above -->
+                        <div class="header-links">
+                            <ul>
+                                <li>
+                                    <div class="header-social">
+                                        <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.instagram.com/cherangroupofinstitutions_/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/@CheranGroupofInstitutions"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,7 +342,7 @@
                                         <nav class="main-menu d-none d-lg-inline-block">
                                             <ul>
                                                 <li>
-                                                    <a href="home-12.html">Home</a>
+                                                    <a href="./index.html">Home</a>
                                                 </li>
                                                 <li >
                                                     <a href="about.html">About Us</a>
@@ -330,7 +405,7 @@ Hero Area
             <div class="hero-style12">
                 <h1 class="hero-title">Best Pharmacy College in Tamilnadu</h1>
                 <p class="hero-text">Join our B.Pharm and M.Pharm programs designed for success.</p>
-                <a href="contact.html" class="th-btn">Apply Now</a>
+                <button type="button" class="th-btn" id="enrollBtn">Apply Now</button>
                 <div class="hero-counter-wrap">
                     <div class="hero-counter">
                         <!-- <div class="hero-counter_icon">
@@ -448,7 +523,7 @@ About Area
                             <img class="tilt-active" src="assets/img/bg/ABOUTLEADER(1).png" alt="About">
                         </div>
                         <div class="about-grid">
-                            <h3 class="about-grid_year"><span class="counter-number">500</span>+</h3>
+                            <h3 class="about-grid_year"><span class="counter-nuber">500</span>+</h3>
                             <p class="about-grid_text">Students Active Our Courses</p>
                         </div>
                         <div class="img2">
@@ -516,7 +591,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat1">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/pharmacy.png" alt="Bachelor of Pharmacy" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/Bachelor of Pharmacy.png" alt="Bachelor of Pharmacy" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">4 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -536,7 +611,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat2">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/pharmacy.png" alt="M.Pharm (Pharmaceutics)" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/M.Pharm (Pharmaceutics).png" alt="M.Pharm (Pharmaceutics)" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">2 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -556,7 +631,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat2">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/M.Pharm (Pharmacy).png" alt="M.Pharm (Pharmacology)" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/M.Pharm (Pharmacology).png" alt="M.Pharm (Pharmacology)" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">2 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -576,7 +651,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat2">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/M.Pharm (Pharmacy).png" alt="M.Pharm (Pharmaceutical Analysis)" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/M.Pharm (Pharmaceutical Analysis).png" alt="M.Pharm (Pharmaceutical Analysis)" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">2 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -596,7 +671,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat3">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/M.Pharm (Pharmacy).png" alt="Pharm.D - Doctor of Pharmacy" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/Pharm.D - Doctor of Pharmacy.png" alt="Pharm.D - Doctor of Pharmacy" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">6 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -616,7 +691,7 @@ Course Area
             <div class="col-md-6 col-xl-4 filter-item cat3">
                 <div class="course-box2">
                     <div class="course-img">
-                        <img src="assets/img/bg/pharmacy.png" alt="Pharm.D (Post Baccalaureate)" style="width:100%;height:auto;display:block;">
+                        <img src="./assets/img/course/Pharm.D (Post Baccalaureate).png" alt="Pharm.D (Post Baccalaureate)" style="width:100%;height:auto;display:block;">
                         <span class="tag" style="position:absolute;top:18px;left:18px;z-index:2;">3 Years</span>
                     </div>
                     <div class="course-content d-flex flex-column align-items-start" style="padding-bottom: 32px;">
@@ -660,7 +735,7 @@ Why choose us Area
                         <img src="assets/img/bg/why choose.jpg" alt="img">
                     </div>
                     <div class="student-count jump-reverse">
-                        <h5 class="title"><span class="text-theme"><span class="counter-number">500</span>+</span> Active Students</h5>
+                        <h5 class="title"><span class="text-theme"><span class="counter-">500</span>+</span> Active Students</h5>
                         <!-- <img src="assets/img/normal/student-group_1_1.png" alt="img"> -->
                     </div>
                     <!-- <div class="text-end">
@@ -671,7 +746,7 @@ Why choose us Area
             <div class="col-xl-6">
                 <div class="wcu-wrap1">
                     <div class="title-area mb-25">
-                        <span class="sub-title"><i class="fal fa-book me-2"></i> WHY CHOOSE US</span>
+                        <span class="sub-title"><i class="fal fa-book me-2 mt-5"></i> WHY CHOOSE US</span>
                         <h2 class="sec-title">Why Choose Cheran</h2>
                         <p class="sec-text mt-20">We are committed to shaping skilled and industry ready pharmacists. Our programs combine academic excellence, practical training and career support to prepare students for a successful future.</p>
                     </div>
@@ -729,7 +804,7 @@ Why choose us Area
 <!--==============================
 Counter Area  
 ==============================-->
-<div class="container">
+<!-- <div class="container">
     <div class="counter-area-1 bg-theme" data-bg-src="assets/img/bg/counter-bg_1.png">
         <div class="row justify-content-between">
             <div class="col-sm-6 col-xl-3 counter-card-wrap">
@@ -758,12 +833,14 @@ Counter Area
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--==============================
 Cta Area  
 ==============================-->
 <section class="cta-area-2 position-relative space-bottom">
-    <div class="cta-bg-img" data-bg-src="assets/img/bg/cta-bg2.png">
+    <div class="cta-bg-img">
+        <img src="./assets/img/course/Home page Cta.png" alt="Students in class" style="width:100%;height:100%;">
+    </div>
     </div>
     </div>
 
@@ -780,11 +857,11 @@ Cta Area
         <div class="cta-wrap2">
             <div class="title-area text-center mb-35">
                 <!-- <span class="sub-title"><i class="fal fa-book me-2"></i>Are You Ready</span> -->
-                <h2 class="sec-title text-white">Explore Our Campus &amp; Facilities</h2>
-                <p class="cta-text">Experience our cutting-edge labs, digital classrooms, and vibrant student life. Book a campus tour or schedule a virtual session now.</p>
+                <h2 class="sec-title text-white">Apply Now & Start Your Pharmacy Journey</h2>
+                <p class="cta-text">Join our renowned pharmacy program and build a rewarding healthcare career</p>
             </div>
             <div class="btn-group justify-content-center">
-                <a href="about.html" class="th-btn style3">Join Now<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="#" class="th-btn style3" id="joinNowBtn">Join Now<i class="fas fa-arrow-right ms-2"></i></a>
                 <!-- <a href="contact.html" class="th-btn style2">Become A Teacher<i class="fas fa-arrow-right ms-2"></i></a> -->
             </div>
         </div>
@@ -803,13 +880,13 @@ Blog Area
         <div class="blog-grid-wrap d-flex justify-content-center">
             <div class="blog-grid" style="width: 1000px; max-width: 100%;"> <!-- Increased width -->
                 <div class="blog-img">
-                    <img src="assets/img/update1/blog/blog_1_1.jpg" alt="blog image" style="width: 100%; height: auto;">
+                    <img src="./assets/img/blog/M.Pharm Admission 2026.png" alt="blog image" style="width: 100%; height: auto;">
                 </div>
                 <div class="blog-content">
-                    <a class="tag" href="blog.html">Admission</a>
+                    <!-- <a class="tag" href="blog.html">Admission</a> -->
                     <h3 class="blog-title"><a href="blog-details.html">Your Complete Guide to M.Pharm Admission 2026</a></h3>
                     <div class="blog-meta style2">
-                        <a href="blog.html"><i class="far fa-clock"></i>05 Sept, 2023</a>
+                        <a href="blog.html"><i class="far fa-clock"></i>05 Sept, 2025</a>
                         <a href="blog.html"><i class="far fa-folder"></i>M.Pharm</a>
                     </div>
                 </div>
@@ -1285,10 +1362,9 @@ Contact Area
                                     <a href="index.html"><img src="assets/img/pharmacy-white.png" alt="edura"></a>
                                 </div>
                             </div>
-                            <h3 class="widget_title">About Company</h3>
+                            <h3 class="widget_title">About College</h3>
                             <p class="about-text">Cheran College of Pharmacy stands as one of the best pharmacy colleges in TamilNadu, offering top pharmacy courses in TamilNadu, including B.Pharm, M.Pharm, Pharm.D and Pharm.D (PB) programs.</p>
                             <div class="th-social">
-                                <h6 class="title text-white">FOLLOW US ON:</h6>
                                 <a href="https://www.facebook.com/Cherangroupofinstitutions"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://x.com/Cherancollege"><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/"><i class="fab fa-linkedin-in"></i></a>
@@ -1303,10 +1379,10 @@ Contact Area
                         <h3 class="widget_title">Quick Links</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                              <li><a href="course.html">Home</a></li>
-                                <li><a href="course.html">About Us</a></li>
-                                <li><a href="course.html">Blog</a></li>
-                                <li><a href="course.html">Contact Us</a></li>
+                              <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About Us</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1319,7 +1395,7 @@ Contact Area
                               <li><a href="course-2.html">Bachelor of Pharmacy</a></li>
                                 <li><a href="course-3.html">M.Pharm (Pharmaceutics)</a></li>
                                 <li><a href="course-4.html">M.Pharm (Pharmacology)</a></li>
-                                <li><a href="course-5.html">Life Style Course</a></li>
+                                <li><a href="course-5.html">M.Pharm (Pharmaceutical Analysis)</li>
                                 <li><a href="course-6.html">Pharm.D</a></li>
                                 <li><a href="course-7.html">Pharm.D (Post Baccalaureate)</a></li>
                             </ul>
@@ -1345,7 +1421,7 @@ Contact Area
                     <div class="widget widget_contact footer-widget">
                         <h3 class="widget_title">Get in touch!</h3>
                         <p class="contact-text">
- Reach out to our team to learn more about admissions, programs, and campus life.</p>
+ Reach out to our team to learn more about admissions, programs, and campus life.</p>
                         <div class="th-widget-contact">
                             <div class="info-box-wrap">
                                 <div class="info-box_icon">
@@ -1418,6 +1494,8 @@ Telungupalayam Pirivu Coimbatore
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Magnific Popup -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- Counter Up -->
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- Circle Progress -->
@@ -1436,6 +1514,99 @@ Telungupalayam Pirivu Coimbatore
 
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const enrollPopup = document.getElementById('enrollPopup');
+            const joinNowBtn = document.getElementById('joinNowBtn');
+            const closeEnrollPopup = document.getElementById('closeEnrollPopup');
+
+            if (joinNowBtn) {
+                joinNowBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    enrollPopup.classList.add('show');
+                });
+            }
+
+            if (closeEnrollPopup) {
+                closeEnrollPopup.addEventListener('click', function() {
+                    enrollPopup.classList.remove('show');
+                });
+            }
+
+            if (enrollPopup) {
+                enrollPopup.addEventListener('click', function(e) {
+                    if (e.target === enrollPopup) {
+                        enrollPopup.classList.remove('show');
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Enrollment Popup Form -->
+    
+    <div id="enrollPopup" class="enroll-popup-overlay">
+        <div class="enroll-popup-content">
+            
+            <div class="el-contact-form-box">
+                <div class="enroll-popup-header">
+                    <h2>Enroll Now</h2>
+                    <p>Get details in your inbox right now.</p>
+                    <button class="enroll-popup-close" id="closeEnrollPopup">&times;</button>
+                </div>
+                <form class="enroll-form" id="enrollForm">
+                    <div class="form-group">
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-group course-select">
+                        <select name="courseType" id="courseType" required>
+                            <option value="" disabled selected>Courses</option>
+                            <option value="bpharm">Bachelor of Pharmacy (B.Pharm)</option>
+                            <option value="mpharm-pharmaceutics">M.Pharm (Pharmaceutics)</option>
+                            <option value="mpharm-pharmacology">M.Pharm (Pharmacology)</option>
+                            <option value="mpharm-analysis">M.Pharm (Pharmaceutical Analysis)</option>
+                            <option value="pharmd">Pharm.D - Doctor of Pharmacy</option>
+                            <option value="pharmd-pb">Pharm.D (Post Baccalaureate)</option>
+                        </select>
+                    </div>
+                        <div class="form-group gender-field">
+                        <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group date-field">
+                        <input type="text" name="dateOfBirth" placeholder="Date of Birth (dd-mm-yyyy)" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    </div>
+                    <button type="submit" class="enroll-submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-social-menu">
+        <a href="https://www.facebook.com/Cherangroupofinstitutions" target="_blank">
+            <span class="social-name">Facebook</span>
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/cherangroupofinstitutions_/" target="_blank">
+            <span class="social-name">Instagram</span>
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/cherangroupofinstitutions/posts/" target="_blank">
+            <span class="social-name">LinkedIn</span>
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
 
 
 </body>
